@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  servico_urbano_por_atributo: MyString
+  descricao: MyString
+  servicos_urbanos_id: MyString
+  bigint: MyString
+  fator: 9.99
+
+two:
+  servico_urbano_por_atributo: MyString
+  descricao: MyString
+  servicos_urbanos_id: MyString
+  bigint: MyString
+  fator: 9.99

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @configuracao %>
+
+<div>
+  <%= link_to "Edit this configuracao", edit_configuracao_path(@configuracao) %> |
+  <%= link_to "Back to configuracaos", configuracaos_path %>
+
+  <%= button_to "Destroy this configuracao", @configuracao, method: :delete %>
+</div>

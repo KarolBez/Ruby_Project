@@ -1,0 +1,2 @@
+module Configuracao::SHelper
+end
