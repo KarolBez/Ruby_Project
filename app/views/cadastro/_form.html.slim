@@ -1,0 +1,42 @@
+<%= form_with(model: configuracao) do |form| %>
+  <% if configuracao.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(configuracao.errors.count, "error") %> prohibited this configuracao from being saved:</h2>
+
+      <ul>
+        <% configuracao.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :servico_urbano_por_atributo, style: "display: block" %>
+    <%= form.text_field :servico_urbano_por_atributo %>
+  </div>
+
+  <div>
+    <%= form.label :descricao, style: "display: block" %>
+    <%= form.text_field :descricao %>
+  </div>
+
+  <div>
+    <%= form.label :servicos_urbanos_id, style: "display: block" %>
+    <%= form.text_field :servicos_urbanos_id %>
+  </div>
+
+  <div>
+    <%= form.label :bigint, style: "display: block" %>
+    <%= form.text_field :bigint %>
+  </div>
+
+  <div>
+    <%= form.label :fator, style: "display: block" %>
+    <%= form.text_field :fator %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
